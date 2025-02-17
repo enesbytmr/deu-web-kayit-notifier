@@ -79,12 +79,22 @@ TELEGRAM_CHAT_ID=telegram_chat_id
 ---
 
 ## 🏃‍♂️ Çalıştırma
+Çalıştırmadan önce hangi botun hangi dersleri kontrol etmesini istediğinizi aşağıdaki arrayi verilen formatta düzenlediğinizde bildirimleri alabileceksiniz.
+```bash
+TARGET_COURSES = [
+    "BİL 3110 Bilimsel Hesaplama",
+    "BİL 3112 Makine Öğrenimi",
+    "BİL 3129 Programlama Dilleri Konseptleri",
+]
+```
+
 Aşağıdaki komutu çalıştırarak botu başlatabilirsin:
 ```bash
 python3 deu-web-kayit-notifier.py
 ```
 Oluşturduğunuz Telegram Botuna /start yazmayı unutmayın. Aksi takdirde bildirim alamazsınız.
 Bot her 1 dakikada bir çalışarak **ders kontenjanlarını kontrol eder** ve **yeni açılan dersleri Telegram üzerinden bildirir**.
+Eğer bir önceki ve bir sonraki bildirim aynı olacaksa bildirim göndermez sadece yenilikleri gönderir.
 
 ---
 
