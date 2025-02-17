@@ -83,6 +83,7 @@ Aşağıdaki komutu çalıştırarak botu başlatabilirsin:
 ```bash
 python3 deu-web-kayit-notifier.py
 ```
+Oluşturduğunuz Telegram Botuna /start yazmayı unutmayın. Aksi takdirde bildirim alamazsınız.
 Bot her 1 dakikada bir çalışarak **ders kontenjanlarını kontrol eder** ve **yeni açılan dersleri Telegram üzerinden bildirir**.
 
 ---
