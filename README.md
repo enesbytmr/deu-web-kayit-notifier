@@ -16,12 +16,12 @@ Bu botu çalıştırmak için aşağıdaki adımları izleyin.
 ### **1️⃣ Gerekli Bağımlılıkları Yükleyin**
 Python bağımlılıklarını yüklemek için:
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 Eğer `requirements.txt` dosyan yoksa, aşağıdaki komutla bağımlılıkları yükleyebilirsin:
 ```bash
-pip install selenium requests python-dotenv
+pip3 install selenium requests python-dotenv
 ```
 
 ### **2️⃣ Chrome ve ChromeDriver Yükleyin**
@@ -40,7 +40,7 @@ Eğer sisteminde Chrome yüklü değilse aşağıdaki bağlantıdan indir:
    ```
 2. Chrome'un sürümüne uygun **ChromeDriver'ı** şu bağlantıdan indir:
    - [ChromeDriver İndir](https://sites.google.com/chromium.org/driver/)
-3. İndirilen `chromedriver` dosyasını `/usr/local/bin/` (Mac/Linux) veya **Projenin Kök Dizini** (Windows) içine taşı:
+3. İndirilen `chromedriver` dosyasını `/usr/local/bin/` veya **Projenin Kök Dizini** içine taşı veya taşıma dosyanın olduğu yolu yaz:
    ```bash
    sudo mv chromedriver /usr/local/bin/
    sudo chmod +x /usr/local/bin/chromedriver
@@ -81,7 +81,7 @@ TELEGRAM_CHAT_ID=telegram_chat_id
 ## 🏃‍♂️ Çalıştırma
 Aşağıdaki komutu çalıştırarak botu başlatabilirsin:
 ```bash
-python3 deubot.py
+python3 deu-web-kayit-notifier.py
 ```
 Bot her 1 dakikada bir çalışarak **ders kontenjanlarını kontrol eder** ve **yeni açılan dersleri Telegram üzerinden bildirir**.
 
